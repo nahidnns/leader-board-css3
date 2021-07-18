@@ -42,15 +42,18 @@
     background-color: #E02C6D;
     
 }
+
 .button:hover{
     background-color:violet;
 }
 .button a{
 color:white;
+text-decoration: none;
 }
 /* Heading Intro */
 .header-section{
     display:flex; 
+    
 }
 .game{
     width:485px;
@@ -58,11 +61,10 @@ color:white;
     padding-left: 156px;
     margin-top: 150px;
     padding-bottom: 187px;
-    transition:transform 1s linear;
+
 }
 .game:hover{
     background-color: deepskyblue;
-    transform: rotate(360deg);
 }
 
 .game-name{
@@ -71,8 +73,9 @@ color:white;
     color:#FFFFFF;
     width:485px;
     height:230px;
-   
-    
+}
+.game-name:hover{
+    color:red;
 }
 .button-live{
     background-color: #E02C6D;
@@ -81,7 +84,9 @@ color:white;
     height:44px;
     text-align: center;
     align-items:center;
-    
+}
+.button-live:hover{
+    background-color: red;
 }
 .button-live a{
     color:#FFFFFF;
@@ -119,6 +124,7 @@ color:#18191F;
     padding-left: 95px;
     padding-top: 70px;
     font-family: 'Poppins', sans-serif;
+    overflow-y: scroll;
 }
 .player-info p{
     color:#6C6C6C;
@@ -131,6 +137,9 @@ color:#18191F;
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 15px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    
 }
 .player-image img{
     width:330px;
@@ -237,3 +246,136 @@ color:#18191F;
 .copyright{
     text-align: center;
 }
+
+
+
+
+/*-------------------------------------- 
+         Media Queries 
+--------------------------------------*/
+
+/*------- Mobile Device --------------*/
+    @media only screen and (max-width:688px){
+                /* Intro Section */
+.container-1{
+    width:400px;
+    height:680px;
+}
+.header-section{
+    display:grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+.game-intro{
+    width:100%;
+    height:300px;
+}
+.game{
+    width:350px;
+    padding-left: 16px;
+    padding-top:0;
+    margin-top: 112px;
+}
+.game-name{
+    width:100%;
+    height:138px;
+    font-size: 36px;
+}
+.header-img{
+    padding-top: 0;
+    margin-top: 0;
+}
+.header-img img{
+    width:329px;
+    height:269.17px;
+    padding-top: 60px;
+    padding-left:15px;
+    margin:0;
+}
+.menu-bar{
+    display: none;
+}
+
+         /* Intro-Section End */
+
+/* Players article Section Start */
+.players-info{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding-left:8px;
+    padding-right: 8px;
+}
+/* Players article Section End */
+
+
+
+/* Highlights Section Start */
+.container-3{
+    width:400px;
+    height:680px;
+}
+.highlight-section{
+    display:grid;
+    grid-template-columns:repeat(1, 1fr) ; 
+    padding-top: 40px;}
+.highlight-intro{
+    width:292px;
+    height:80px;
+    font-size: 30px;
+    padding-left:0;
+    margin-left: 15px;
+}
+.highlight-info{
+    width:300px;
+    height:110px;
+    font-size: 16px;
+    padding-top: 30px;
+    padding-left: 15px;
+}
+.highlight{
+    width:300px;
+    height:100px;
+    padding-top:20px;
+    padding-left: 15px;
+}
+.button-watch-now{
+    margin-left: 15px;
+}
+.highlight-img{
+    width:380px;
+margin-top: 0;
+padding-top: 0;
+}
+.highlight-img img{
+    width:328px;
+    height:248;
+    padding-top: 60px;
+    padding-left:20px;
+}
+/* Highlight Section End */
+
+
+/* Footer Section Start */
+.container-4{
+    width:400px;
+    height:300px;
+    padding:10;
+    padding-top:250px;
+    padding-left:0;
+}
+.footer-section{
+    width:250px;
+    padding-left: 0;
+    margin-left:0;
+}
+.footer-section img{
+    width:280px;
+    padding-left: 50px;
+    padding-top:0;
+}
+.footer-icon{
+    padding-left:140px;
+}
+.copyright{
+    padding-left: 60px;
+}
+    }
