@@ -6,7 +6,10 @@
     height:677px;
 }
 
-/* Navigation Bar */
+
+
+
+/* Navigation Bar Start */
 .menu-bar{
     display:flex;
     justify-content: space-between;
@@ -16,11 +19,12 @@
     margin-left:96px;
     margin-right: 126px;
   position:fixed;
- 
 }
+
 .menu-anchor:hover{
     background-color:tomato;
 }
+
 .menu-item ul{
     width:100%;
     display:flex;
@@ -28,41 +32,47 @@
     list-style: none;
     font-size: 16px;
     padding-left: 0px;
-   
 }
+
 .menu-anchor{
     color:white;
     text-decoration: none;
     
 }
+
 .login-button button{
     text-align:center;
     width:123px;
     height:44px;
-    background-color: #E02C6D;
-    
+    background-color: #E02C6D;  
 }
 
 .button:hover{
     background-color:violet;
 }
+
 .button a{
 color:white;
 text-decoration: none;
 }
-/* Heading Intro */
+/* Navigation Bar End */
+
+
+
+
+/* Game Introduction Start */
 .header-section{
     display:flex; 
-    
 }
+
 .game{
     width:485px;
     height:155px;
     padding-left: 156px;
     margin-top: 150px;
     padding-bottom: 187px;
-
 }
+
 .game:hover{
     background-color: deepskyblue;
 }
@@ -74,9 +84,11 @@ text-decoration: none;
     width:485px;
     height:230px;
 }
+
 .game-name:hover{
-    color:red;
+    color:grey;
 }
+
 .button-live{
     background-color: #E02C6D;
     border-radius: 15px;
@@ -85,9 +97,11 @@ text-decoration: none;
     text-align: center;
     align-items:center;
 }
+
 .button-live:hover{
     background-color: red;
 }
+
 .button-live a{
     color:#FFFFFF;
     text-decoration: none;
@@ -95,12 +109,14 @@ text-decoration: none;
     font-family: 'Poppins', sans-serif;
     
 }
+
 .fa-arrow-right{
     padding-left: 8px;
     padding-top:15px;
     width:24px;
     height:24px;
 }
+
 .header-img img{
     width:500px;
     height:438px;
@@ -109,12 +125,16 @@ text-decoration: none;
     padding-right: 30px;
     padding-bottom: 86px;
 }
+/* Game Introduction End */
 
 
-/* Players Article Start */
+
+
+/* Players-info section Start */
 .container-2{
     background-color: whitesmoke;
 }
+
 .players-info{
 color:#18191F;
     display: grid;
@@ -126,9 +146,11 @@ color:#18191F;
     font-family: 'Poppins', sans-serif;
     overflow-y: scroll;
 }
+
 .player-info p{
     color:#6C6C6C;
 }
+
 .player{
     width:330px;
     height:474px;
@@ -138,34 +160,37 @@ color:#18191F;
     padding-right: 15px;
     padding-top: 15px;
     overflow-x: hidden;
-    overflow-y: scroll;
-    
+    overflow-y: scroll;  
 }
+
 .player-image img{
     width:330px;
     height:256px;
 }
+
 .player-info{
     padding-right: 15px;
 }
+/* Players-info section End */
 
 
 
 
-/* Highhlights Section */
+/* Highhlights Section Start */
 .highlight-section{
     display:flex; 
     padding-top: 80px;
     background-color: whitesmoke;
 }
+
 .highlight{
     padding-left: 156px;
     padding-top: 100px;
     padding-bottom: 187px;
     width:469px;
     height:309px;
-
 }
+
 .highlight-intro{
     font-family: 'Poppins', sans-serif;
     font-size: 48px;
@@ -174,13 +199,13 @@ color:#18191F;
     padding-bottom: 0;
     margin-bottom: 5px;
 }
+
 .highlight-info{
     text-align: justify;
     width:350px;
-    color:#6C6C6C;
-
-    
+    color:#6C6C6C;  
 }
+
 .button-watch-now{
     background-color: #E02C6D;
     border-radius: 15px;
@@ -188,21 +213,22 @@ color:#18191F;
     height:44px;
     text-align: center;
     align-items:center;
-    
 }
+
 .button-watch-now a{
     color:#FFFFFF;
     text-decoration: none;
     padding-top:20px;
-    font-family: 'Poppins', sans-serif;
-    
+    font-family: 'Poppins', sans-serif; 
 }
+
 .fa-arrow-right{
     padding-left: 8px;
     padding-top:15px;
     width:24px;
     height:24px;
 }
+
 .highlight-img img{
     width:500px;
     height:438px;
@@ -215,11 +241,12 @@ color:#18191F;
 
 
 
+
 /* Footer Section Start */
 .container-4{
     background-color: whitesmoke;
     width:1334px;
-    height:215px;
+    height:300px;
 }
 .footer-section{
     background-color:whitesmoke;
@@ -246,6 +273,7 @@ color:#18191F;
 .copyright{
     text-align: center;
 }
+/* Footer Section End */
 
 
 
@@ -256,7 +284,8 @@ color:#18191F;
 
 /*------- Mobile Device --------------*/
     @media only screen and (max-width:688px){
-                /* Intro Section */
+
+/* Game Introduction Start */
 .container-1{
     width:400px;
     height:680px;
@@ -268,17 +297,21 @@ color:#18191F;
 .game-intro{
     width:100%;
     height:300px;
+    padding-bottom:0;
 }
 .game{
     width:350px;
+    height:50px;
     padding-left: 16px;
     padding-top:0;
-    margin-top: 112px;
+    margin-top: 110px;
 }
 .game-name{
     width:100%;
-    height:138px;
+    height:100px;
+    margin-bottom:10;
     font-size: 36px;
+    padding-top: 30px;
 }
 .header-img{
     padding-top: 0;
@@ -295,16 +328,20 @@ color:#18191F;
     display: none;
 }
 
-         /* Intro-Section End */
+/* Game Introduction Start */
 
-/* Players article Section Start */
+
+
+
+/* Players-info Section Start */
 .players-info{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     padding-left:8px;
     padding-right: 8px;
 }
-/* Players article Section End */
+/* Players-info Section Start */
+
 
 
 
@@ -354,6 +391,8 @@ padding-top: 0;
 /* Highlight Section End */
 
 
+
+
 /* Footer Section Start */
 .container-4{
     width:400px;
@@ -378,4 +417,5 @@ padding-top: 0;
 .copyright{
     padding-left: 60px;
 }
+/* Footer Section End */
     }
